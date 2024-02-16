@@ -1,0 +1,72 @@
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  margin-inline: 1rem;
+}
+
+/*Navbar Style*/
+body {
+  transition: background-color 0.6s;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  transition: color 0.6s;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+.items a {
+  margin-left: 3rem;
+  text-decoration: none;
+  color: black;
+  transition: color 0.6s;
+  font-size: 18px;
+}
+
+.items a:active {
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+
+/*Home page*/
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.heading h1 {
+  font-size: 3rem;
+}
+.para p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.para button {
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(48, 102, 70);
+  padding: 18px;
+  margin-top: 2rem;
+}
+.para button img {
+  font-weight: 600;
+  font-size: 18px;
+}
