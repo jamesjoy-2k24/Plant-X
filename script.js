@@ -1,5 +1,6 @@
 function toggleMode() {
   //Nav Bar
+  const toggle = document.getElementById("toggle-btn");
   const body = document.body;
   const icon = document.getElementById("icon-img");
   const logo = document.querySelector(".logo");
@@ -18,11 +19,17 @@ function toggleMode() {
   const para1 = document.getElementById("para1");
   const box = document.querySelectorAll(".box");
 
+  //Discount Page
+  const heading2 = document.getElementById("heading2");
+  const heading3 = document.getElementById("heading3");
+  const para2 = document.getElementById("para2");
+
   if (body.classList.contains("dark-mode")) {
     body.classList.remove("dark-mode");
     icon.src = "moon.svg";
     icon.style.filter = "invert(0)";
     body.style.backgroundColor = "#f0f0f0";
+    toggle.style.backgroundColor = "white";
     logo.style.color = "black";
     home.style.color = "black";
     about.style.color = "black";
@@ -36,6 +43,10 @@ function toggleMode() {
     box.forEach((item) => {
       item.style.color = "black";
     });
+    //Discount Page
+    heading2.style.color = "black";
+    heading3.style.color = "black";
+    para2.style.color = "black";
 
     heading1.style.color = "black";
     para1.style.color = "black";
@@ -44,6 +55,7 @@ function toggleMode() {
     icon.src = "sun.svg";
     icon.style.filter = "invert(1)";
     body.style.backgroundColor = "black";
+    toggle.style.backgroundColor = "#f0f0f0";
     logo.style.color = "white";
     home.style.color = "white";
     about.style.color = "white";
@@ -53,12 +65,16 @@ function toggleMode() {
     //Home Page
     heading.style.color = "white";
     para.style.color = "white";
-    //About Page
+    //About Pagea
     heading1.style.color = "white";
     para1.style.color = "white";
     box.forEach((item) => {
       item.style.color = "white";
     });
+    //Discount Page
+    heading2.style.color = "white";
+    heading3.style.color = "white";
+    para2.style.color = "white";
   }
 }
 
