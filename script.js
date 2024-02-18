@@ -24,6 +24,16 @@ function toggleMode() {
   const heading3 = document.getElementById("heading3");
   const para2 = document.getElementById("para2");
 
+  //Product Page
+  const heading4 = document.getElementById("heading4");
+  const button1 = document.getElementById("button1");
+  const button2 = document.getElementById("button2");
+  const button3 = document.getElementById("button3");
+  const details = document.querySelectorAll(".details");
+
+  //FAQS
+  const faq = document.getElementById("faq-heading");
+
   if (body.classList.contains("dark-mode")) {
     body.classList.remove("dark-mode");
     icon.src = "moon.svg";
@@ -40,6 +50,8 @@ function toggleMode() {
     heading.style.color = "black";
     para.style.color = "black";
     //About Page
+    heading1.style.color = "black";
+    para1.style.color = "black";
     box.forEach((item) => {
       item.style.color = "black";
     });
@@ -47,9 +59,16 @@ function toggleMode() {
     heading2.style.color = "black";
     heading3.style.color = "black";
     para2.style.color = "black";
-
-    heading1.style.color = "black";
-    para1.style.color = "black";
+    //Product Page
+    heading4.style.color = "black";
+    button1.style.color = "black";
+    button2.style.color = "black";
+    button3.style.color = "black";
+    details.forEach((item) => {
+      item.style.color = "black";
+    });
+    //FAQs
+    faq.style.color = "black";
   } else {
     body.classList.add("dark-mode");
     icon.src = "sun.svg";
@@ -65,7 +84,7 @@ function toggleMode() {
     //Home Page
     heading.style.color = "white";
     para.style.color = "white";
-    //About Pagea
+    //About Page
     heading1.style.color = "white";
     para1.style.color = "white";
     box.forEach((item) => {
@@ -75,6 +94,16 @@ function toggleMode() {
     heading2.style.color = "white";
     heading3.style.color = "white";
     para2.style.color = "white";
+    //Product page
+    heading4.style.color = "white";
+    button1.style.backgroundColor = "white";
+    button2.style.backgroundColor = "white";
+    button3.style.backgroundColor = "white";
+    details.forEach((item) => {
+      item.style.color = "white";
+    });
+    //FAQs
+    faq.style.color = "white";
   }
 }
 
@@ -90,5 +119,10 @@ function activateLink(linkId) {
   });
   const selectedLink = document.getElementById(linkId);
   selectedLink.classList.add("active");
+
+  const sectionId = linkId + "-section";
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: "smooth" });
+
   toggleNav();
 }

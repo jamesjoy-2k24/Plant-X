@@ -20,13 +20,25 @@
           <h1>PLANTEX</h1>
         </div>
         <div class="items" id="nav-links">
-          <a href="#home" id="home" onclick="activateLink('home')">Home</a>
-          <a href="#about" id="about" onclick="activateLink('about')">About</a>
-          <a href="#product" id="product" onclick="activateLink('product')"
+          <a href="#home-section" id="home" onclick="activateLink('home')"
+            >Home</a
+          >
+          <a href="#about-section" id="about" onclick="activateLink('about')"
+            >About</a
+          >
+          <a
+            href="#product-section"
+            id="product"
+            onclick="activateLink('product')"
             >Product</a
           >
-          <a href="#faqs" id="faqs" onclick="activateLink('faqs')">FAQs</a>
-          <a href="#contact" id="contact" onclick="activateLink('contact')"
+          <a href="#faqs-section" id="faqs" onclick="activateLink('faqs')"
+            >FAQs</a
+          >
+          <a
+            href="#contact-section"
+            id="contact"
+            onclick="activateLink('contact')"
             >Contact Us</a
           >
           <button id="mode-toggle" class="icon" onclick="toggleMode()">
@@ -40,8 +52,9 @@
         </button>
       </div>
     </section>
+
     <!--Home Page-->
-    <section id="home">
+    <section id="home-section">
       <div class="home">
         <div class="description">
           <div class="heading" id="heading">
@@ -68,7 +81,7 @@
     </section>
 
     <!--About Page-->
-    <section id="about" class="about">
+    <section id="about-section" class="about">
       <div class="about-pic">
         <img src="/Resources/img/about.png" alt="About Photo" />
       </div>
@@ -143,29 +156,29 @@
       </div>
     </section>
 
-    <!-- <section id="product" class="product">
+    <section id="product-section" class="product">
       <div class="heading" id="heading4">
         <h1>Our Products</h1>
       </div>
-      <div class="title">
-        <div class="button">
-          <button type="submit">Featured</button>
+      <div class="title" id="title">
+        <div class="button" id="button">
+          <button type="submit" id="button1">Featured</button>
         </div>
         <div class="button">
-          <button type="submit">Bestseller</button>
+          <button type="submit" id="button2">Bestseller</button>
         </div>
         <div class="button">
-          <button type="submit">Latest</button>
+          <button type="submit" id="button3">Latest</button>
         </div>
       </div>
-      <div class="products">
+      <div class="products1">
         <div class="product1">
           <img
             src="/Resources/img/product1.png"
             alt="Product 1"
             width="150px"
           />
-          <div class="details">
+          <div class="details" id="details">
             <h5>American Marigold</h5>
             <p>$23.45</p>
           </div>
@@ -194,8 +207,8 @@
             width="150px"
           />
           <div class="details">
-            <h5>American Marigold</h5>
-            <p>$23.45</p>
+            <h5>Black Eyed Susan</h5>
+            <p>$25.45</p>
           </div>
           <div class="stars">
             <div class="star">
@@ -222,8 +235,8 @@
             width="150px"
           />
           <div class="details">
-            <h5>American Marigold</h5>
-            <p>$23.45</p>
+            <h5>Bleeding Heart</h5>
+            <p>$40.45</p>
           </div>
           <div class="stars">
             <div class="star">
@@ -250,6 +263,65 @@
             width="150px"
           />
           <div class="details">
+            <h5>Butterfly Weed</h5>
+            <p>$45.45</p>
+          </div>
+          <div class="stars">
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+          </div>
+        </div>
+        <div class="product1">
+          <img
+            src="/Resources/img/product6.png"
+            alt="Product 1"
+            width="145px"
+          />
+          <div class="details">
+            <h5>Butterfly Weed</h5>
+            <p>$45.45</p>
+          </div>
+          <div class="stars">
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="products1">
+        <div class="product1">
+          <img
+            src="/Resources/img/product1.png"
+            alt="Product 1"
+            width="150px"
+          />
+          <div class="details" id="details">
             <h5>American Marigold</h5>
             <p>$23.45</p>
           </div>
@@ -273,13 +345,97 @@
         </div>
         <div class="product1">
           <img
-            src="/Resources/img/product5.png"
+            src="/Resources/img/product2.png"
             alt="Product 1"
             width="150px"
           />
           <div class="details">
-            <h5>American Marigold</h5>
-            <p>$23.45</p>
+            <h5>Black Eyed Susan</h5>
+            <p>$25.45</p>
+          </div>
+          <div class="stars">
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+          </div>
+        </div>
+        <div class="product1">
+          <img
+            src="/Resources/img/product3.png"
+            alt="Product 1"
+            width="150px"
+          />
+          <div class="details">
+            <h5>Bleeding Heart</h5>
+            <p>$40.45</p>
+          </div>
+          <div class="stars">
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+          </div>
+        </div>
+        <div class="product1">
+          <img
+            src="/Resources/img/product4.png"
+            alt="Product 1"
+            width="150px"
+          />
+          <div class="details">
+            <h5>Butterfly Weed</h5>
+            <p>$45.45</p>
+          </div>
+          <div class="stars">
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+            <div class="star">
+              <img src="/star.png" alt="Stars" width="20px" />
+            </div>
+          </div>
+        </div>
+        <div class="product1">
+          <img
+            src="/Resources/img/product5.png"
+            alt="Product 1"
+            width="145px"
+          />
+          <div class="details">
+            <h5 class="product">Common Yarrow</h5>
+            <p>$30.45</p>
           </div>
           <div class="stars">
             <div class="star">
@@ -300,8 +456,36 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
+    <!--FAQs Section-->
+    <section
+      id="faqs-section"
+      class="faqs"    >
+      <div class="faq">
+        <div class="faq-heading">
+          <h1 id="faq-heading">Some common questions were often asked</h1>
+        </div>
+        <div class="questions">
+          <div class="firstq">
+            <p id="para4">+ My follower are falling off or dying?</p>
+            <p id="para4">+ What causes leaves to become pale?</p>
+            <p id="para4">+ What causes brown crispy leaves?</p>
+          </div>
+          <div class="secondq">
+            <p id="para4" class="para4">
+              + How do I choose a plant? <br />
+              <span
+                >Plants are easy way to add color energy and transform your
+                space but which planet is for you. Choosing the right plant.
+              </span>
+            </p>
+            <p id="para4">+ How do I change the post?</p>
+            <p id="para4">+ Why are gnats flying around my plant?</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://kit.fontawesome.com/2073bc4a5d.js"
       crossorigin="anonymous"
