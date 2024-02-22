@@ -591,26 +591,15 @@ body {
 }
 
 /*Team Section*/
-.team {
-  height: 100vh;
-}
-.team-heading {
-  background-color: rgb(163, 233, 255);
-  height: 40vh;
-}
-.team-heading h1 {
-  padding: 0px 20px 0px;
+.contact h1 {
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
 }
-.team-heading p {
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  line-height: 25px;
-  text-align: center;
+.main {
+  display: flex;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
