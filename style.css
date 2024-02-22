@@ -536,3 +536,296 @@ body {
   background-color: rgb(19, 131, 64);
   line-height: 2.5rem;
 }
+@media screen and (max-width: 1400px) {
+  .faq {
+    flex-direction: column;
+  }
+  .faq-heading {
+    width: 100%;
+  }
+  .questions {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .faq {
+    flex-direction: column;
+  }
+  .faq-heading {
+    text-align: center;
+  }
+  .questions {
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstq {
+    width: 60%;
+  }
+  .secondq {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .faq {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .faq-heading h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .questions {
+    margin-top: 10rem;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .questions {
+    height: 100vh;
+  }
+}
+
+/*Team Section*/
+.team {
+  height: 100vh;
+}
+.team-heading {
+  background-color: rgb(163, 233, 255);
+  height: 40vh;
+}
+.team-heading h1 {
+  padding: 0px 20px 0px;
+  text-align: center;
+}
+.team-heading p {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  line-height: 25px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70vh;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.contact-info {
+  width: 35%;
+  height: 70vh;
+  background: linear-gradient(to bottom, rgb(10, 124, 6, 1), green);
+  /* border-radius: 10px; */
+}
+.contant {
+  color: white;
+  padding: 50px;
+}
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+p {
+  margin-top: 1.5rem;
+  font-size: 16px;
+  line-height: 25px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.icons {
+  margin-bottom: 2rem;
+}
+.item p {
+  font-size: 18px;
+  font-weight: 550;
+}
+i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 2rem;
+}
+i:hover {
+  color: red;
+  background-color: black;
+  transition: 0.3s ease-in;
+}
+/*Form*/
+form {
+  width: 65%;
+  height: 60vh;
+  margin-top: 3rem;
+  font-style: italic;
+}
+.first {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.f {
+  display: flex;
+  flex-direction: column;
+}
+.l {
+  display: flex;
+  flex-direction: column;
+}
+.second {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.p {
+  display: flex;
+  flex-direction: column;
+}
+.e {
+  display: flex;
+  flex-direction: column;
+}
+.m label {
+  margin-top: 4rem;
+  margin-left: 5rem;
+  color: gray;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 18px;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px solid gray;
+  background: transparent;
+}
+
+textarea {
+  border: none;
+  border-bottom: 2px solid gray;
+  background: transparent;
+  margin-left: 5rem;
+  width: 60%;
+}
+.button {
+  display: flex;
+  justify-content: end;
+  margin-top: 1.5rem;
+}
+.button input {
+  color: white;
+  font-weight: 500;
+  background-color: green;
+  border-radius: 10px;
+  margin-right: 3rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-info {
+    width: 100%;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-form {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    height: 60vh;
+  }
+  form {
+    width: 100%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .map {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .contact-form {
+    height: 80vh;
+    width: 95%;
+  }
+  .contact-info {
+    width: 80%;
+    height: 80vh;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+  }
+  input {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .first {
+    flex-direction: column;
+  }
+  .second {
+    flex-direction: column;
+  }
+  .button {
+    justify-content: center;
+  }
+  .button input {
+    width: 100%;
+    margin-right: 0;
+  }
+  .m {
+    margin-left: 0;
+    width: 80%;
+  }
+  .map {
+    width: 100%;
+  }
+  .l {
+    margin-left: 0;
+  }
+  .p {
+    margin-left: 0;
+  }
+  .e {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-info {
+    width: 100%;
+    height: 60vh;
+  }
+  form {
+    background-color: white;
+    height: 80vh;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+  }
+}
