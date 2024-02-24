@@ -8,6 +8,7 @@ function toggleMode() {
   const about = document.getElementById("about");
   const product = document.getElementById("product");
   const faqs = document.getElementById("faqs");
+  const team = document.getElementById("team");
   const contact = document.getElementById("contact");
 
   //Home Page
@@ -34,6 +35,10 @@ function toggleMode() {
   //FAQS
   const faq = document.getElementById("faq-heading");
 
+  //Team
+  const heading5 = document.getElementById("heading5");
+  const para5 = document.getElementById("para5");
+
   if (body.classList.contains("dark-mode")) {
     body.classList.remove("dark-mode");
     icon.src = "moon.svg";
@@ -45,6 +50,7 @@ function toggleMode() {
     about.style.color = "black";
     product.style.color = "black";
     faqs.style.color = "black";
+    team.style.color = "black";
     contact.style.color = "black";
     //Home Page
     heading.style.color = "black";
@@ -69,6 +75,9 @@ function toggleMode() {
     });
     //FAQs
     faq.style.color = "black";
+    //team
+    heading5.style.color = "black";
+    para5.style.color = "black";
   } else {
     body.classList.add("dark-mode");
     icon.src = "sun.svg";
@@ -80,6 +89,7 @@ function toggleMode() {
     about.style.color = "white";
     product.style.color = "white";
     faqs.style.color = "white";
+    team.style.color = "white";
     contact.style.color = "white";
     //Home Page
     heading.style.color = "white";
@@ -104,6 +114,9 @@ function toggleMode() {
     });
     //FAQs
     faq.style.color = "white";
+    //team
+    heading5.style.color = "white";
+    para5.style.color = "white";
   }
 }
 
