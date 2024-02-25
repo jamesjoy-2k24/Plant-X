@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
 
 /*Navbar Style*/
-
 body {
   transition: background-color 0.6s;
 }
@@ -820,6 +823,12 @@ form .form-button button {
   font-weight: 600;
   margin-top: 2rem;
 }
+.map iframe {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  height: 40vh;
+}
 @media screen and (max-width: 1500px) {
   .contact-address {
     flex-direction: column;
@@ -953,5 +962,143 @@ form .form-button button {
   }
   .contact-form .third textarea {
     width: 80%;
+  }
+  .map {
+    margin-top: 25rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/*Footer*/
+footer {
+  height: 50vh;
+  margin-top: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .first .logo {
+  display: flex;
+  margin: 0;
+}
+footer .first h1 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  font-size: clamp (1rem, 2vw, 2rem);
+}
+footer .first .para p {
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+footer .first button {
+  width: 80%;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 255, 76, 0.3);
+}
+footer .first button a {
+  text-decoration: none;
+  background-color: rgb(0, 153, 61);
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+footer .first button input {
+  width: 60%;
+  border: none;
+  background-color: transparent;
+  padding: 20px;
+  font-size: 18px;
+}
+footer .second {
+  display: flex;
+  flex-direction: column;
+}
+footer .title {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: clamp (1rem, 2vw, 2rem);
+  margin-top: 8px;
+}
+footer .title .last {
+  width: 300px;
+}
+footer .address {
+  margin-top: 1rem;
+  color: gray;
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+footer .icons i {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 30px;
+  color: gray;
+}
+footer .cards img {
+  margin-top: 2rem;
+  margin-right: 0.8rem;
+  width: 50px;
+}
+@media (max-width: 1300px) {
+  footer {
+    margin-top: 50rem;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    margin-top: 70rem;
+  }
+  footer .first .logo {
+    display: flex;
+    justify-content: center;
+  }
+  footer .first .para p {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  footer .first button {
+    width: 100%;
+  }
+  footer .title {
+    margin-top: 2rem;
+  }
+  footer .title .last {
+    text-align: center;
+  }
+  footer .cards {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  footer .first .logo {
+    font-size: 15px;
+  }
+  footer .first .para {
+    width: 100%;
+    text-align: center;
+  }
+  footer .first .para p {
+    font-size: 15px;
+  }
+  footer .title {
+    font-size: 15px;
+  }
+  footer .address {
+    font-size: 15px;
   }
 }

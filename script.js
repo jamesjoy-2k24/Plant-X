@@ -39,6 +39,13 @@ function toggleMode() {
   const heading5 = document.getElementById("heading5");
   const para5 = document.getElementById("para5");
 
+  //Contact
+  const heading6 = document.getElementById("heading6");
+  const para6 = document.getElementById("para6");
+
+  //Footer
+  const footer = document.querySelector("footer");
+
   if (body.classList.contains("dark-mode")) {
     body.classList.remove("dark-mode");
     icon.src = "moon.svg";
@@ -78,6 +85,11 @@ function toggleMode() {
     //team
     heading5.style.color = "black";
     para5.style.color = "black";
+    //Contact
+    heading6.style.color = "black";
+    para6.style.color = "black";
+    //Footer
+    footer.style.color = "black";
   } else {
     body.classList.add("dark-mode");
     icon.src = "sun.svg";
@@ -117,6 +129,11 @@ function toggleMode() {
     //team
     heading5.style.color = "white";
     para5.style.color = "white";
+    //Contact
+    heading6.style.color = "white";
+    para6.style.color = "white";
+    // footer
+    footer.style.color = "white";
   }
 }
 
@@ -139,3 +156,12 @@ function activateLink(linkId) {
 
   toggleNav();
 }
+
+
+//Form validation
+// const form = document.getElementById("form");
+// const first = document.getElementById("first");
+// const last = document.getElementById("last");
+// const email = document.getElementById("email");
+// const errorElement = document.getElementById("error");
+
