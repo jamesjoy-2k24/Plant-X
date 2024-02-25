@@ -666,7 +666,7 @@ body {
 .team-details p {
   text-align: justify;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .team {
     height: 100vh;
     margin-bottom: 40rem;
@@ -704,33 +704,56 @@ body {
 }
 .contact-table {
   display: flex;
-  flex-wrap: wrap;
   width: 60%;
-  height: 70%;
+  height: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
 }
 .contact-intro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 3rem;
   width: 35%;
   height: 100%;
   background-color: rgb(0, 255, 102);
   box-shadow: 0.5rem 0.5rem 2rem rgba(151, 238, 223, 0.644);
   border-radius: 5px;
 }
+.contact-intro h1 {
+  font-size: 2rem;
+  padding: 20px;
+}
+.contact-intro #para7 {
+  padding-left: 20px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
 .contact-address {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-.contact-address .icons img {
+.contact-address .icons {
+  display: flex;
+  flex-wrap: wrap;
   width: 50px;
-  background-color: white;
+  height: 50px;
   border-radius: 50%;
+  background-color: white;
+  margin-top: 1rem;
+}
+.contact-address .icons img {
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-address .address p {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
 }
 .contact-form {
   width: 65%;
@@ -738,4 +761,197 @@ body {
   box-shadow: 0.5rem 0.5rem 2rem rgba(151, 238, 223, 0.644);
   background-color: rgba(255, 255, 255, 0.952);
   border-radius: 5px;
+}
+form {
+  margin-top: 3rem;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-size: 18px;
+}
+form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  padding: 10px;
+  margin-top: 0.5rem;
+  width: 100%;
+  font-size: 16px;
+}
+form .first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+form .second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 2rem;
+}
+form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+}
+form .third {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 8%;
+}
+form .form-button {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+form .form-button button {
+  background-color: rgb(0, 255, 76);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 1500px) {
+  .contact-address {
+    flex-direction: column;
+    margin-top: -1rem;
+  }
+  .contact-address p {
+    width: 100%;
+  }
+  form input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .contact-table {
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+  }
+  .contact-intro {
+    height: 80%;
+    width: 100%;
+  }
+  .contact-form {
+    height: 100%;
+    width: 100%;
+  }
+  .contact-intro .contact-address {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .contact-intro .contact-address .address {
+    margin-left: 2rem;
+  }
+  .contact-intro h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact-intro #para7 {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-address .address p {
+    text-align: center;
+    margin-left: 0.4rem;
+    margin-top: 1rem;
+  }
+  form .form-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-form .first {
+    width: 100%;
+    margin-left: auto;
+  }
+  .contact-form .second {
+    width: 100%;
+    margin-left: auto;
+  }
+  form .third {
+    text-align: center;
+  }
+  .contact-form .third textarea {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100vh;
+    flex-wrap: unset;
+    flex-direction: column;
+  }
+  .contact-heading p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .form-button .button {
+    margin-bottom: 2rem;
+  }
+  .contact-form .third textarea {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-heading p {
+    width: 100%;
+  }
+  .contact-heading p {
+    width: 80%;
+    font-size: 15px;
+  }
+  .contact-intro .contact-address {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-address {
+    width: 100%;
+  }
+  .contact-intro .contact-address .address {
+    margin-left: 0;
+  }
+  .contact-form .first {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .contact-form .second {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .contact-form label {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contact-form input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5rem;
+  }
+  .contact-form .third textarea {
+    width: 80%;
+  }
 }
