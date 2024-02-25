@@ -534,18 +534,35 @@
           </div>
         </div>
         <div class="contact-form">
-          <form action="form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="3e49b032-7455-4968-a44e-ae2d6f9d3567"
+            />
             <div class="first">
               <div>
                 <label for="first name"
                   >First Name*
-                  <input type="text" id="first" />
+                  <input
+                    type="text"
+                    id="first"
+                    required
+                    maxlength="15"
+                    minlength="3"
+                  />
                 </label>
               </div>
               <div>
                 <label for="last name"
                   >Last Name*
-                  <input type="text" id="last" />
+                  <input
+                    type="text"
+                    id="last"
+                    required
+                    maxlength="15"
+                    minlength="3"
+                  />
                 </label>
               </div>
             </div>
@@ -553,13 +570,19 @@
               <div>
                 <label for="phone"
                   >Phone*
-                  <input type="text" id="phone" />
+                  <input
+                    type="text"
+                    id="phone"
+                    required
+                    maxlength="10"
+                    minlength="10"
+                  />
                 </label>
               </div>
               <div>
                 <label for="email"
                   >email*
-                  <input type="email" id="email" />
+                  <input type="email" id="email" required />
                 </label>
               </div>
             </div>
@@ -653,6 +676,8 @@
     <!-- <div class="copyright">
       <p>Copyright &copy; 2022. Joy All Rights Reserved</p>
     </div> -->
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script
       src="https://kit.fontawesome.com/2073bc4a5d.js"
       crossorigin="anonymous"

@@ -156,12 +156,3 @@ function activateLink(linkId) {
 
   toggleNav();
 }
-
-
-//Form validation
-// const form = document.getElementById("form");
-// const first = document.getElementById("first");
-// const last = document.getElementById("last");
-// const email = document.getElementById("email");
-// const errorElement = document.getElementById("error");
-
