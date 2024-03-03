@@ -159,23 +159,28 @@
       </div>
     </section>
 
+    <!-- Product Section -->
     <section id="product-section" class="product">
       <div class="heading" id="heading4">
         <h1>Our Products</h1>
       </div>
       <div class="title" id="title">
-        <div class="button" id="button">
-          <button type="submit" id="button1">Featured</button>
+        <div class="btn" id="button">
+          <button type="submit" id="button1" onclick="feature()">
+            Featured
+          </button>
         </div>
-        <div class="button">
-          <button type="submit" id="button2">Bestseller</button>
+        <div class="btn">
+          <button type="submit" id="button2" onclick="bestseller()">
+            Bestseller
+          </button>
         </div>
-        <div class="button">
-          <button type="submit" id="button3">Latest</button>
+        <div class="btn">
+          <button type="submit" id="button3" onclick="latest()">Latest</button>
         </div>
       </div>
-      <div class="products1">
-        <div class="product1">
+      <div class="products1" id="products">
+        <div class="product1" id="p1">
           <img
             src="/Resources/img/product1.png"
             alt="Product 1"
@@ -203,7 +208,7 @@
             </div>
           </div>
         </div>
-        <div class="product1">
+        <div class="product1" id="p2">
           <img
             src="/Resources/img/product2.png"
             alt="Product 1"
@@ -231,7 +236,7 @@
             </div>
           </div>
         </div>
-        <div class="product1">
+        <div class="product1" id="p3">
           <img
             src="/Resources/img/product3.png"
             alt="Product 1"
@@ -259,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div class="product1">
+        <div class="product1" id="p4">
           <img
             src="/Resources/img/product4.png"
             alt="Product 1"
@@ -289,8 +294,8 @@
         </div>
       </div>
 
-      <div class="products1">
-        <div class="product1">
+      <div class="products1" id="products2">
+        <div class="product1" id="p5">
           <img
             src="/Resources/img/product1.png"
             alt="Product 1"
@@ -318,7 +323,7 @@
             </div>
           </div>
         </div>
-        <div class="product1">
+        <div class="product1" id="p6">
           <img
             src="/Resources/img/product2.png"
             alt="Product 1"
@@ -346,7 +351,7 @@
             </div>
           </div>
         </div>
-        <div class="product1">
+        <div class="product1" id="p7">
           <img
             src="/Resources/img/product3.png"
             alt="Product 1"
@@ -374,7 +379,7 @@
             </div>
           </div>
         </div>
-        <div class="product1">
+        <div class="product1" id="p8">
           <img
             src="/Resources/img/product4.png"
             alt="Product 1"
@@ -413,9 +418,11 @@
         </div>
         <div class="questions">
           <div class="firstq">
-            <p id="para4">+ My follower are falling off or dying?</p>
-            <p id="para4">+ What causes leaves to become pale?</p>
-            <p id="para4">+ What causes brown crispy leaves?</p>
+            <p id="para4" onclick="f1">
+              + My follower are falling off or dying?
+            </p>
+            <p id="para4" onclick="f2">+ What causes leaves to become pale?</p>
+            <p id="para4" onclick="f3">+ What causes brown crispy leaves?</p>
           </div>
           <div class="secondq">
             <p id="para4" class="para4">

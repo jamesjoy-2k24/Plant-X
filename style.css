@@ -394,7 +394,6 @@ body {
 }
 .title {
   transition: color 0.6s;
-
   display: flex;
   justify-content: space-around;
   width: 25%;
@@ -403,21 +402,26 @@ body {
   margin-top: 2rem;
 }
 .title button {
+  color: rgb(0, 153, 61);
   transition: color 0.6s;
-
   padding: 10px 20px 10px 20px;
   font-size: 1rem;
   font-weight: 500;
   border: 1px solid black;
   border-radius: 10px;
-  background: transparent;
+
+  background: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
 }
 .title button:hover {
-  transition: 0.3s;
-  border: 2px solid rgb(19, 131, 64);
-  color: rgb(19, 131, 64);
+  transition: 0.5s;
+  border: 1px solid rgb(0, 0, 0);
   border-style: dashed;
   border-spacing: 1px;
+  background-color: rgb(0, 153, 61);
+  color: black;
+  background-position: -100% 0;
 }
 .products1 {
   width: 80%;
@@ -428,12 +432,28 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.product1 {
+  box-shadow: 0.5rem 0.5rem 20px rgba(40, 129, 92, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.product1 img {
+  transition: 0.6s;
+}
+.product1 img:hover {
+  transform: scale(1.3);
+  transition: 0.6s;
+  margin-bottom: 2rem;
+}
 .products1 .stars {
   display: flex;
 }
 .details {
   transition: color 0.6s;
 }
+
 .details h5 {
   font-size: 17px;
 }
@@ -544,6 +564,7 @@ body {
   background-color: rgb(19, 131, 64);
   line-height: 2.5rem;
 }
+
 @media screen and (max-width: 1400px) {
   .faq {
     height: 100vh;

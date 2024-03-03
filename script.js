@@ -156,3 +156,66 @@ function activateLink(linkId) {
 
   toggleNav();
 }
+
+//Product page
+function bestseller() {
+  let x = document.getElementById("p1");
+  let y = document.getElementById("p2");
+  let z = document.getElementById("p3");
+  let w = document.getElementById("p4");
+  let a = document.getElementById("p5");
+  let b = document.getElementById("p6");
+  let c = document.getElementById("p7");
+  let d = document.getElementById("p8");
+
+  x.style.display = "block";
+  y.style.display = "block";
+  z.style.display = "block";
+  w.style.display = "none";
+  a.style.display = "block";
+  b.style.display = "none";
+  c.style.display = "none";
+  d.style.display = "block";
+}
+
+function latest() {
+  let x = document.getElementById("p1");
+  let y = document.getElementById("p2");
+  let z = document.getElementById("p3");
+  let w = document.getElementById("p4");
+  let a = document.getElementById("p5");
+  let b = document.getElementById("p6");
+  let c = document.getElementById("p7");
+  let d = document.getElementById("p8");
+
+  x.style.display = "block";
+  y.style.display = "block";
+  z.style.display = "block";
+  w.style.display = "block";
+  a.style.display = "none";
+  b.style.display = "none";
+  c.style.display = "none";
+  d.style.display = "none";
+}
+
+function feature() {
+  let x = document.getElementById("p1");
+  let y = document.getElementById("p2");
+  let z = document.getElementById("p3");
+  let w = document.getElementById("p4");
+  let a = document.getElementById("p5");
+  let b = document.getElementById("p6");
+  let c = document.getElementById("p7");
+  let d = document.getElementById("p8");
+
+  x.style.display = "block";
+  y.style.display = "block";
+  z.style.display = "block";
+  w.style.display = "block";
+  a.style.display = "block";
+  b.style.display = "block";
+  c.style.display = "block";
+  d.style.display = "block";
+}
+
+//FAQs function
